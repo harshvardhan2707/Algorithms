@@ -2,6 +2,7 @@
 using namespace std;
 void Merge(int a[],int low,int mid,int high){
     int a1[mid-low+1],a2[high-mid],j=0,k=0,l1=0,l2=0;
+    int low1=low;
     for(int i=low;i<=mid;i++){
         a1[j++]=a[i];
     }
@@ -14,6 +15,8 @@ void Merge(int a[],int low,int mid,int high){
     }
     for(;l1<j;l1++)a[low++]=a1[l1];
     for(;l2<k;l2++)a[low++]=a2[l2];
+    for(int i=low1;i<=high;i++)cout<<a[i]<<" ";
+    cout<<"\n";
 }
 void MergeSort(int a[],int low,int high){
     if(low<high){
@@ -27,7 +30,7 @@ void printIt(int a[],int size){
     for(int i=0;i<size;i++)cout<<a[i]<<" ";
 }
 int main(){
-    int a[10]={6,2,4,1,8,10,2,34,12,11};
-    MergeSort(a,0,9);
-    printIt(a,10);
+    int a[12]={4,6,2,10,5,7,3,1,6,9,11,13};
+    MergeSort(a,0,11);
+    printIt(a,12);
 }
