@@ -1,15 +1,12 @@
-x=int(input())
-y=input()
-z=list(map(int,input().split(" ")))
-ans=""
-m=-1
-flag=True
-for i in y:
-    if(m==-1 and z[int(i)-1]>int(i)):
-        m=int(i)-1
-        ans+=str(z[int(i)-1])
-    elif(int(i)-1==m):
-        ans+=str(z[int(i)-1])
-    else:
-        ans+=i
-print(ans)
+def fun ():
+    a = 3
+    b = 1
+    c = 2
+    b = b^a^ c * 2
+    if(b and c):
+        b = 1
+        if(a):
+            a = a*a%5
+        C = 0
+    print(a+b+c)
+fun ()
