@@ -1,5 +1,10 @@
 #include <bits/stdc++.h>
 using namespace std;
 int main(){
-    int MM,PS,NP,
+int j = 1, num1 = 4;  
+while (++j <= 10)  
+{  
+  num1++;  
+} 
+cout<<num1;
 }
